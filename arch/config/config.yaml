@@ -1,0 +1,110 @@
+# Echo Application Configuration
+
+server:
+  host: "0.0.0.0"
+  port: 8085
+  mode: "debug"
+  read_timeout: 900
+  write_timeout: 900
+  max_request_body: 67108864
+  shutdown_timeout: 10
+
+log:
+  level: "info"
+  format: "console"
+  output: "both"
+  dir: "./logs"
+  filename: "echo.log"
+  max_size: 100
+  max_backups:
+  max_age: 10
+  compress: true
+  rotation_time: "daily"  # 时间轮转: daily(每天), hourly(每小时), 留空则按大小轮转
+
+db:
+  driver: "mysql"
+  dsn: "root:password@tcp(localhost:3306)/echo?charset=utf8mb4&parseTime=True&loc=Local"
+  max_idle_conns: 10
+  max_open_conns: 100
+  conn_max_lifetime: 3600
+
+redis:
+  addr: "localhost:6379"
+  password: ""
+  db: 0
+  pool_size: 100
+
+jwt:
+  secret: "change-me-in-production"
+  expire: 24
+  refresh_expire: 168
+
+# 中间件配置
+middleware:
+  # CORS 跨域配置
+  cors:
+    enabled: true
+    allow_origins:
+      - "*"
+    allow_methods:
+      - "GET"
+      - "POST"
+      - "PUT"
+      - "DELETE"
+      - "PATCH"
+      - "OPTIONS"
+    allow_headers:
+      - "Origin"
+      - "Content-Type"
+      - "Accept"
+      - "Authorization"
+      - "X-Request-ID"
+    expose_headers:
+      - "Content-Length"
+      - "X-Request-ID"
+    allow_credentials: true
+    max_age: 43200  # 12 小时
+
+  # Gzip 压缩配置
+  gzip:
+    enabled: true
+    level: 6  # 压缩级别 1-9
+    min_length: 1024  # 最小压缩长度（字节）
+    excluded_exts:
+      - ".png"
+      - ".gif"
+      - ".jpeg"
+      - ".jpg"
+      - ".webp"
+
+  # 限流配置
+  limiter:
+    enabled: true
+    rate: 100     # 每秒请求数
+    burst: 200    # 突发请求数
+    key_func: "ip"  # ip, path, user
+
+  # Swagger 文档配置
+  swagger:
+    enabled: true
+    base_path: "/swagger"
+    title: "Echo API"
+    version: "1.0.0"
+
+  # 访问日志配置
+  access_log:
+    enabled: true
+    format: "json"  # json, text
+    skip_paths:
+      - "/health"
+      - "/metrics"
+      - "/swagger"
+    time_format: "2006-01-02 15:04:05"
+
+  # 链路追踪配置 (OpenTelemetry)
+  tracing:
+    enabled: false
+    service_name: "echo-service"
+    endpoint: "localhost:4317"
+    sample_rate: 1.0
+    insecure: true

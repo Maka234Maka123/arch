@@ -1,0 +1,191 @@
+2025-12-02 09:44:22	[34mINFO[0m	ioc/app.go:35	Config loaded successfully	{"env": "debug", "log_level": "info"}
+2025-12-02 09:44:22	[34mINFO[0m	ioc/app.go:43	Hertz server initialized	{"address": "0.0.0.0:8085"}
+2025-12-02 09:44:22	[34mINFO[0m	ioc/app.go:55	Starting server...	{"host": "0.0.0.0", "port": 8085, "mode": "debug"}
+2025-12-02 09:44:22	[34mINFO[0m	route/engine.go:397	HERTZ: Using network library=netpoll
+2025-12-02 09:44:22	[34mINFO[0m	netpoll/transport.go:140	HERTZ: HTTP server listening on address=[::]:8085
+2025-12-02 09:44:40	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 09:44:40] 200 -     387.334µs GET /health 
+2025-12-02 09:44:40	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 09:44:40] 404 -       5.708µs GET /favicon.ico 
+2025-12-02 09:44:40	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 09:44:40] 404 -       5.625µs GET /favicon.ico 
+2025-12-02 09:45:22	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 09:45:22] 200 -     237.166µs GET /health 
+2025-12-02 09:45:22	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 09:45:22] 404 -        6.25µs GET /favicon.ico 
+2025-12-02 09:45:22	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 09:45:22] 404 -       5.708µs GET /favicon.ico 
+2025-12-02 09:45:46	[34mINFO[0m	server/hertz.go:113	HERTZ: Received signal: interrupt
+
+2025-12-02 09:45:46	[34mINFO[0m	server/hertz.go:77	HERTZ: Begin graceful shutdown, wait at most num=10 seconds...
+2025-12-02 09:45:46	[34mINFO[0m	server/main.go:36	Received shutdown signal	{"signal": "interrupt"}
+2025-12-02 09:45:46	[34mINFO[0m	ioc/app.go:66	Shutting down server...
+2025-12-02 09:45:46	[31mERROR[0m	ioc/app.go:71	Server shutdown error	{"error": "engine is not running"}
+echo/internal/ioc.(*App).Shutdown
+	/Users/wyx/code/server/echo/internal/ioc/app.go:71
+main.main.func1
+	/Users/wyx/code/server/echo/cmd/server/main.go:40
+2025-12-02 09:45:46	[31mERROR[0m	server/main.go:41	Server shutdown error	{"error": "engine is not running"}
+main.main.func1
+	/Users/wyx/code/server/echo/cmd/server/main.go:41
+2025-12-02 09:45:48	[34mINFO[0m	ioc/app.go:35	Config loaded successfully	{"env": "debug", "log_level": "info"}
+2025-12-02 09:45:48	[34mINFO[0m	ioc/app.go:43	Hertz server initialized	{"address": "0.0.0.0:8085"}
+2025-12-02 09:45:48	[34mINFO[0m	ioc/app.go:55	Starting server...	{"host": "0.0.0.0", "port": 8085, "mode": "debug"}
+2025-12-02 09:45:48	[34mINFO[0m	route/engine.go:397	HERTZ: Using network library=netpoll
+2025-12-02 09:45:48	[34mINFO[0m	netpoll/transport.go:140	HERTZ: HTTP server listening on address=[::]:8085
+2025-12-02 09:45:52	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 09:45:52] 200 -     412.833µs GET /health 
+2025-12-02 09:45:52	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 09:45:52] 404 -       6.666µs GET /favicon.ico 
+2025-12-02 09:45:52	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 09:45:52] 404 -       5.875µs GET /favicon.ico 
+2025-12-02 09:45:59	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 09:45:58] 200 -     328.708µs GET /health 
+2025-12-02 09:45:59	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 09:45:59] 404 -       8.667µs GET /favicon.ico 
+2025-12-02 09:45:59	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 09:45:59] 404 -       5.417µs GET /favicon.ico 
+2025-12-02 09:46:30	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 09:46:30] 200 -     231.458µs GET /health 
+2025-12-02 09:46:30	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 09:46:30] 404 -       5.917µs GET /favicon.ico 
+2025-12-02 09:46:30	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 09:46:30] 404 -       8.291µs GET /favicon.ico 
+2025-12-02 09:46:52	[34mINFO[0m	server/hertz.go:113	HERTZ: Received signal: interrupt
+
+2025-12-02 09:46:52	[34mINFO[0m	server/main.go:36	Received shutdown signal	{"signal": "interrupt"}
+2025-12-02 09:46:53	[34mINFO[0m	ioc/app.go:66	Shutting down server...
+2025-12-02 09:46:52	[34mINFO[0m	server/hertz.go:77	HERTZ: Begin graceful shutdown, wait at most num=10 seconds...
+2025-12-02 09:46:53	[31mERROR[0m	server/hertz.go:83	HERTZ: Shutdown error=engine is not running
+2025-12-02 09:47:00	[34mINFO[0m	ioc/app.go:35	Config loaded successfully	{"env": "debug", "log_level": "info"}
+2025-12-02 09:47:00	[34mINFO[0m	ioc/app.go:43	Hertz server initialized	{"address": "0.0.0.0:8085"}
+2025-12-02 09:47:00	[34mINFO[0m	ioc/app.go:55	Starting server...	{"host": "0.0.0.0", "port": 8085, "mode": "debug"}
+2025-12-02 09:47:00	[34mINFO[0m	route/engine.go:397	HERTZ: Using network library=netpoll
+2025-12-02 09:47:00	[34mINFO[0m	netpoll/transport.go:140	HERTZ: HTTP server listening on address=[::]:8085
+2025-12-02 09:49:03	[34mINFO[0m	server/main.go:36	Received shutdown signal	{"signal": "interrupt"}
+2025-12-02 09:49:03	[34mINFO[0m	ioc/app.go:66	Shutting down server...
+2025-12-02 09:49:03	[34mINFO[0m	server/hertz.go:113	HERTZ: Received signal: interrupt
+
+2025-12-02 09:49:03	[34mINFO[0m	server/hertz.go:77	HERTZ: Begin graceful shutdown, wait at most num=10 seconds...
+2025-12-02 09:49:03	[31mERROR[0m	server/hertz.go:83	HERTZ: Shutdown error=engine is not running
+2025-12-02 09:49:04	[34mINFO[0m	ioc/app.go:35	Config loaded successfully	{"env": "debug", "log_level": "info"}
+2025-12-02 09:49:04	[34mINFO[0m	ioc/app.go:43	Hertz server initialized	{"address": "0.0.0.0:8085"}
+2025-12-02 09:49:04	[34mINFO[0m	ioc/app.go:55	Starting server...	{"host": "0.0.0.0", "port": 8085, "mode": "debug"}
+2025-12-02 09:49:04	[34mINFO[0m	route/engine.go:397	HERTZ: Using network library=netpoll
+2025-12-02 09:49:04	[34mINFO[0m	netpoll/transport.go:140	HERTZ: HTTP server listening on address=[::]:8085
+2025-12-02 09:49:07	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 09:49:07] 200 -     251.667µs GET /health 
+2025-12-02 09:49:07	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 09:49:07] 404 -       7.958µs GET /favicon.ico 
+2025-12-02 09:49:07	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 09:49:07] 404 -       6.875µs GET /favicon.ico 
+2025-12-02 09:50:15	[34mINFO[0m	server/hertz.go:113	HERTZ: Received signal: interrupt
+
+2025-12-02 09:50:15	[34mINFO[0m	server/hertz.go:77	HERTZ: Begin graceful shutdown, wait at most num=10 seconds...
+2025-12-02 09:50:15	[34mINFO[0m	server/main.go:36	Received shutdown signal	{"signal": "interrupt"}
+2025-12-02 09:50:15	[34mINFO[0m	ioc/app.go:66	Shutting down server...
+2025-12-02 09:50:15	[31mERROR[0m	ioc/app.go:71	Server shutdown error	{"error": "engine is not running"}
+echo/internal/ioc.(*App).Shutdown
+	/Users/wyx/code/server/echo/internal/ioc/app.go:71
+main.main.func1
+	/Users/wyx/code/server/echo/cmd/server/main.go:40
+2025-12-02 09:50:15	[31mERROR[0m	server/main.go:41	Server shutdown error	{"error": "engine is not running"}
+main.main.func1
+	/Users/wyx/code/server/echo/cmd/server/main.go:41
+2025-12-02 09:52:53	[34mINFO[0m	ioc/app.go:35	Config loaded successfully	{"env": "debug", "log_level": "info"}
+2025-12-02 09:52:53	[34mINFO[0m	ioc/app.go:43	Hertz server initialized	{"address": "0.0.0.0:8085"}
+2025-12-02 09:52:53	[34mINFO[0m	ioc/app.go:55	Starting server...	{"host": "0.0.0.0", "port": 8085, "mode": "debug"}
+2025-12-02 09:52:53	[34mINFO[0m	route/engine.go:397	HERTZ: Using network library=netpoll
+2025-12-02 09:52:53	[34mINFO[0m	netpoll/transport.go:140	HERTZ: HTTP server listening on address=[::]:8085
+2025-12-02 09:52:54	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 09:52:54] 200 -       82.75µs GET /health 
+2025-12-02 09:52:54	[34mINFO[0m	server/main.go:36	Received shutdown signal	{"signal": "terminated"}
+2025-12-02 09:52:54	[34mINFO[0m	ioc/app.go:66	Shutting down server...
+2025-12-02 09:52:54	[31mERROR[0m	server/hertz.go:70	HERTZ: Receive close signal: error=terminated
+2025-12-02 10:08:10	[34mINFO[0m	ioc/app.go:41	Config loaded successfully	{"env": "debug", "log_level": "info"}
+2025-12-02 10:08:10	[34mINFO[0m	ioc/tracing.go:26	Tracing is disabled
+2025-12-02 10:08:10	[34mINFO[0m	ioc/app.go:54	Application initialized	{"version": "dev", "commit": "unknown", "address": "0.0.0.0:8085"}
+2025-12-02 10:08:10	[34mINFO[0m	ioc/app.go:69	Starting server...	{"host": "0.0.0.0", "port": 8085, "mode": "debug", "version": "dev"}
+2025-12-02 10:08:10	[34mINFO[0m	route/engine.go:397	HERTZ: Using network library=netpoll
+2025-12-02 10:08:10	[34mINFO[0m	netpoll/transport.go:140	HERTZ: HTTP server listening on address=[::]:8085
+2025-12-02 10:08:11	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:08:10] 200 -      13.458µs GET /health 
+2025-12-02 10:08:11	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:08:10] 200 -          75µs GET /version 
+2025-12-02 10:08:11	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:08:10] 200 -     218.208µs GET /metrics 
+2025-12-02 10:08:11	[34mINFO[0m	server/main.go:36	Received shutdown signal	{"signal": "terminated"}
+2025-12-02 10:08:11	[34mINFO[0m	ioc/app.go:87	Starting graceful shutdown...
+2025-12-02 10:08:11	[34mINFO[0m	ioc/app.go:98	Waiting for load balancer to drain connections...
+2025-12-02 10:08:11	[31mERROR[0m	server/hertz.go:70	HERTZ: Receive close signal: error=terminated
+2025-12-02 10:17:27	[34mINFO[0m	ioc/app.go:41	Config loaded successfully	{"env": "debug", "log_level": "info"}
+2025-12-02 10:17:27	[34mINFO[0m	ioc/tracing.go:26	Tracing is disabled
+2025-12-02 10:17:27	[34mINFO[0m	ioc/app.go:54	Application initialized	{"version": "dev", "commit": "unknown", "address": "0.0.0.0:8085"}
+2025-12-02 10:17:27	[34mINFO[0m	ioc/app.go:69	Starting server...	{"host": "0.0.0.0", "port": 8085, "mode": "debug", "version": "dev"}
+2025-12-02 10:17:27	[34mINFO[0m	route/engine.go:397	HERTZ: Using network library=netpoll
+2025-12-02 10:17:27	[34mINFO[0m	netpoll/transport.go:140	HERTZ: HTTP server listening on address=[::]:8085
+2025-12-02 10:17:43	[34mINFO[0m	server/main.go:36	Received shutdown signal	{"signal": "interrupt"}
+2025-12-02 10:17:43	[34mINFO[0m	ioc/app.go:87	Starting graceful shutdown...
+2025-12-02 10:17:43	[34mINFO[0m	server/hertz.go:113	HERTZ: Received signal: interrupt
+
+2025-12-02 10:17:43	[34mINFO[0m	ioc/app.go:98	Waiting for load balancer to drain connections...
+2025-12-02 10:17:43	[34mINFO[0m	server/hertz.go:77	HERTZ: Begin graceful shutdown, wait at most num=10 seconds...
+2025-12-02 10:17:43	[34mINFO[0m	route/engine.go:314	HERTZ: Execute OnShutdownHooks finish
+2025-12-02 10:17:57	[34mINFO[0m	ioc/app.go:41	Config loaded successfully	{"env": "debug", "log_level": "info"}
+2025-12-02 10:17:57	[34mINFO[0m	ioc/tracing.go:26	Tracing is disabled
+2025-12-02 10:17:57	[34mINFO[0m	ioc/app.go:54	Application initialized	{"version": "dev", "commit": "unknown", "address": "0.0.0.0:8085"}
+2025-12-02 10:17:57	[34mINFO[0m	ioc/app.go:69	Starting server...	{"host": "0.0.0.0", "port": 8085, "mode": "debug", "version": "dev"}
+2025-12-02 10:17:57	[34mINFO[0m	route/engine.go:397	HERTZ: Using network library=netpoll
+2025-12-02 10:17:57	[34mINFO[0m	netpoll/transport.go:140	HERTZ: HTTP server listening on address=[::]:8085
+2025-12-02 10:19:37	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:19:37] 200 -     290.334µs GET /health 
+2025-12-02 10:19:38	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:19:38] 404 -       5.959µs GET /favicon.ico 
+2025-12-02 10:19:38	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:19:38] 404 -       5.875µs GET /favicon.ico 
+2025-12-02 10:19:44	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:19:44] 200 -     194.208µs GET /health/live 
+2025-12-02 10:19:44	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:19:44] 404 -       6.833µs GET /favicon.ico 
+2025-12-02 10:19:44	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:19:44] 404 -       6.334µs GET /favicon.ico 
+2025-12-02 10:19:57	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:19:57] 200 -     182.833µs GET /health/ready 
+2025-12-02 10:19:57	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:19:57] 404 -       6.167µs GET /favicon.ico 
+2025-12-02 10:19:57	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:19:57] 404 -       5.583µs GET /favicon.ico 
+2025-12-02 10:20:04	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:20:04] 200 -     399.458µs GET /version 
+2025-12-02 10:20:04	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:20:04] 404 -       5.792µs GET /favicon.ico 
+2025-12-02 10:20:04	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:20:04] 404 -       5.834µs GET /favicon.ico 
+2025-12-02 10:20:12	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:20:12] 200 -    1.293292ms GET /metrics 
+2025-12-02 10:20:12	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:20:12] 404 -         5.5µs GET /favicon.ico 
+2025-12-02 10:20:12	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:20:12] 404 -           5µs GET /favicon.ico 
+2025-12-02 10:20:41	[34mINFO[0m	server/hertz.go:113	HERTZ: Received signal: interrupt
+
+2025-12-02 10:20:41	[34mINFO[0m	server/hertz.go:77	HERTZ: Begin graceful shutdown, wait at most num=10 seconds...
+2025-12-02 10:20:41	[34mINFO[0m	server/main.go:36	Received shutdown signal	{"signal": "interrupt"}
+2025-12-02 10:20:41	[34mINFO[0m	ioc/app.go:87	Starting graceful shutdown...
+2025-12-02 10:20:41	[34mINFO[0m	ioc/app.go:98	Waiting for load balancer to drain connections...
+2025-12-02 10:20:43	[34mINFO[0m	ioc/app.go:102	Shutting down HTTP server...
+2025-12-02 10:20:43	[31mERROR[0m	ioc/app.go:104	HTTP server shutdown error	{"error": "engine is not running"}
+echo/internal/ioc.(*App).Shutdown
+	/Users/wyx/code/server/echo/internal/ioc/app.go:104
+main.main.func1
+	/Users/wyx/code/server/echo/cmd/server/main.go:40
+2025-12-02 10:20:43	[34mINFO[0m	ioc/app.go:119	Graceful shutdown completed	{"uptime": "2m46s"}
+2025-12-02 10:21:55	[34mINFO[0m	ioc/app.go:41	Config loaded successfully	{"env": "debug", "log_level": "info"}
+2025-12-02 10:21:55	[34mINFO[0m	ioc/tracing.go:26	Tracing is disabled
+2025-12-02 10:21:55	[34mINFO[0m	ioc/app.go:54	Application initialized	{"version": "dev", "commit": "unknown", "address": "0.0.0.0:8085"}
+2025-12-02 10:21:55	[34mINFO[0m	ioc/app.go:69	Starting server...	{"host": "0.0.0.0", "port": 8085, "mode": "debug", "version": "dev"}
+2025-12-02 10:21:55	[34mINFO[0m	route/engine.go:397	HERTZ: Using network library=netpoll
+2025-12-02 10:21:55	[34mINFO[0m	netpoll/transport.go:140	HERTZ: HTTP server listening on address=[::]:8085
+2025-12-02 10:21:56	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:21:56] 200 -      23.583µs GET /health 
+2025-12-02 10:21:56	[34mINFO[0m	server/main.go:36	Received shutdown signal	{"signal": "terminated"}
+2025-12-02 10:21:56	[34mINFO[0m	ioc/app.go:87	Starting graceful shutdown...
+2025-12-02 10:21:56	[34mINFO[0m	ioc/app.go:98	Waiting for load balancer to drain connections...
+2025-12-02 10:21:56	[31mERROR[0m	server/hertz.go:70	HERTZ: Receive close signal: error=terminated
+2025-12-02 10:26:21	[34mINFO[0m	ioc/app.go:41	Config loaded successfully	{"env": "debug", "log_level": "info"}
+2025-12-02 10:26:21	[34mINFO[0m	ioc/tracing.go:26	Tracing is disabled
+2025-12-02 10:26:21	[34mINFO[0m	ioc/app.go:63	Starting server...	{"host": "0.0.0.0", "port": 8085, "mode": "debug"}
+2025-12-02 10:26:21	[34mINFO[0m	route/engine.go:397	HERTZ: Using network library=netpoll
+2025-12-02 10:26:21	[34mINFO[0m	netpoll/transport.go:140	HERTZ: HTTP server listening on address=[::]:8085
+2025-12-02 10:26:26	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:26:26] 200 -       253.5µs GET /health 
+2025-12-02 10:26:27	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:26:27] 404 -       5.833µs GET /favicon.ico 
+2025-12-02 10:26:27	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:26:27] 404 -       5.083µs GET /favicon.ico 
+2025-12-02 10:26:28	[34mINFO[0m	server/hertz.go:113	HERTZ: Received signal: interrupt
+
+2025-12-02 10:26:28	[34mINFO[0m	server/main.go:36	Received shutdown signal	{"signal": "interrupt"}
+2025-12-02 10:26:28	[34mINFO[0m	server/hertz.go:77	HERTZ: Begin graceful shutdown, wait at most num=10 seconds...
+2025-12-02 10:26:28	[34mINFO[0m	ioc/app.go:80	Starting graceful shutdown...
+2025-12-02 10:26:28	[34mINFO[0m	ioc/app.go:91	Waiting for load balancer to drain connections...
+2025-12-02 10:26:30	[34mINFO[0m	ioc/app.go:95	Shutting down HTTP server...
+2025-12-02 10:26:30	[34mINFO[0m	ioc/app.go:114	Graceful shutdown completed
+2025-12-02 10:53:53	[34mINFO[0m	ioc/app.go:41	Config loaded successfully	{"env": "debug", "log_level": "info"}
+2025-12-02 10:53:53	[34mINFO[0m	ioc/tracing.go:26	Tracing is disabled
+2025-12-02 10:53:53	[34mINFO[0m	ioc/app.go:63	Starting server...	{"host": "0.0.0.0", "port": 8085, "mode": "debug"}
+2025-12-02 10:53:53	[34mINFO[0m	route/engine.go:416	HERTZ: Using network library=netpoll
+2025-12-02 10:53:53	[34mINFO[0m	netpoll/transport.go:149	HERTZ: HTTP server listening on address=[::]:8085
+2025-12-02 10:53:54	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:53:53] 200 -    1.146875ms GET /health 
+2025-12-02 10:53:54	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:53:54] 404 -        5.75µs GET /favicon.ico 
+2025-12-02 10:53:54	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:53:54] 404 -        4.75µs GET /favicon.ico 
+2025-12-02 10:54:12	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:54:12] 404 -     231.042µs GET /swagger/ 
+2025-12-02 10:54:12	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:54:12] 404 -           7µs GET /favicon.ico 
+2025-12-02 10:54:12	[34mINFO[0m	accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:168	[2025-12-02 10:54:12] 404 -         5.5µs GET /favicon.ico 
+2025-12-02 10:54:29	[34mINFO[0m	server/hertz.go:103	HERTZ: Received signal: interrupt
+
+2025-12-02 10:54:29	[34mINFO[0m	route/engine.go:316	HERTZ: Begin graceful shutdown, wait at most 10s ...
+2025-12-02 10:54:29	[34mINFO[0m	server/main.go:36	Received shutdown signal	{"signal": "interrupt"}
+2025-12-02 10:54:29	[34mINFO[0m	ioc/app.go:80	Starting graceful shutdown...
+2025-12-02 10:54:29	[34mINFO[0m	ioc/app.go:91	Waiting for load balancer to drain connections...
+2025-12-02 10:54:31	[34mINFO[0m	ioc/app.go:95	Shutting down HTTP server...
+2025-12-02 10:54:31	[34mINFO[0m	ioc/app.go:114	Graceful shutdown completed
