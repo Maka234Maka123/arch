@@ -1,0 +1,39 @@
+# Echo �(���Mn
+
+server:
+  host: "0.0.0.0"
+  port: 8080
+  mode: "release"
+  read_timeout: 30
+  write_timeout: 30
+  max_request_body: 67108864
+  shutdown_timeout: 30
+
+log:
+  level: "info"
+  format: "json"
+  output: "both"
+  dir: "/var/log/archv2"
+  filename: "app.log"
+  max_size: 200
+  max_backups: 30
+  max_age: 90
+  compress: true
+
+db:
+  driver: "mysql"
+  dsn: "${DB_DSN}"  # ǯ���Mn
+  max_idle_conns: 20
+  max_open_conns: 200
+  conn_max_lifetime: 3600
+
+redis:
+  addr: "${REDIS_ADDR}"
+  password: "${REDIS_PASSWORD}"
+  db: 0
+  pool_size: 200
+
+jwt:
+  secret: "${JWT_SECRET}"
+  expire: 24
+  refresh_expire: 168
