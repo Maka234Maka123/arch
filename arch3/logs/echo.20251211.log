@@ -1,0 +1,317 @@
+2025-12-11 11:16:02	[34mINFO[0m	ioc/app.go:80	Config loaded successfully	{"env": "debug", "log_level": "info"}
+2025-12-11 11:16:02	[34mINFO[0m	ioc/tracing.go:89	OpenTelemetry provider initialized	{"endpoint": "apmplus-cn-beijing.volces.com:4317", "service_name": "echo", "has_app_key": true}
+2025-12-11 11:16:02	[34mINFO[0m	ioc/tracing.go:185	OTEL log provider initialized with zap bridge
+2025-12-11 11:16:02	[34mINFO[0m	ioc/redis.go:54	Redis connected successfully	{"addr": "localhost:6379", "db": 0, "tracing_enabled": true, "metrics_enabled": true}
+2025-12-11 11:16:02	[34mINFO[0m	ioc/sms.go:37	SMS client initialized	{"provider": "volcengine"}
+2025-12-11 11:16:02	[34mINFO[0m	ioc/app.go:111	All routes registered successfully
+2025-12-11 11:16:02	[34mINFO[0m	ioc/app.go:133	Starting server...	{"address": "0.0.0.0:8085", "mode": "debug"}
+2025-12-11 11:16:02	[34mINFO[0m	ioc/app.go:140	Server started successfully	{"address": "0.0.0.0:8085", "health_endpoint": "/health", "ready_endpoint": "/ready"}
+2025-12-11 11:16:02	[34mINFO[0m	route/engine.go:416	HERTZ: Using network library=netpoll
+2025-12-11 11:16:02	[34mINFO[0m	netpoll/transport.go:149	HERTZ: HTTP server listening on address=[::]:8085
+2025-12-11 11:16:18	[34mINFO[0m	app/context.go:827	access	{"trace_id": "79a0218bfca95733fbeca0d32df81734", "span_id": "04ab533c8ba677b8", "context": "context.Background.WithValue(internal.traceCarrierContextKeyType, *internal.TraceCarrier).WithValue(baggage.baggageContextKeyType, baggage.baggageState).WithValue(trace.traceContextKeyType, trace.nonRecordingSpan).WithValue(trace.traceContextKeyType, *trace.recordingSpan)", "status": 404, "biz_code": 0, "latency": 0.000019375, "latency_ms": 0, "method": "GET", "path": "/healthy", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 0}
+2025-12-11 11:16:32	[34mINFO[0m	app/context.go:827	access	{"trace_id": "0b365b9d22f6ef7ef2d168243203b021", "span_id": "b5add4d2b147be3c", "context": "context.Background.WithValue(internal.traceCarrierContextKeyType, *internal.TraceCarrier).WithValue(baggage.baggageContextKeyType, baggage.baggageState).WithValue(trace.traceContextKeyType, trace.nonRecordingSpan).WithValue(trace.traceContextKeyType, *trace.recordingSpan)", "status": 404, "biz_code": 0, "latency": 0.000013625, "latency_ms": 0, "method": "GET", "path": "/api/v1/user/sms", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 0}
+2025-12-11 14:17:17	[34mINFO[0m	server/main.go:52	Received shutdown signal	{"signal": "interrupt"}
+2025-12-11 14:17:17	[34mINFO[0m	server/hertz.go:103	HERTZ: Received signal: interrupt
+
+2025-12-11 14:17:17	[34mINFO[0m	route/engine.go:316	HERTZ: Begin graceful shutdown, wait at most 10s ...
+2025-12-11 14:17:17	[34mINFO[0m	ioc/app.go:174	Starting graceful shutdown...
+2025-12-11 14:17:17	[34mINFO[0m	ioc/app.go:187	Waiting for load balancer to drain connections...
+2025-12-11 14:17:17	[34mINFO[0m	route/engine.go:334	HERTZ: Execute OnShutdownHooks finish
+2025-12-11 14:17:20	[34mINFO[0m	ioc/app.go:79	Config loaded successfully	{"env": "debug", "log_level": "info"}
+2025-12-11 14:17:20	[34mINFO[0m	ioc/tracing.go:89	OpenTelemetry provider initialized	{"endpoint": "apmplus-cn-beijing.volces.com:4317", "service_name": "echo", "has_app_key": true}
+2025-12-11 14:17:20	[34mINFO[0m	ioc/tracing.go:185	OTEL log provider initialized with zap bridge
+2025-12-11 14:17:20	[34mINFO[0m	ioc/wire.go:76	database connected	{"host": "127.0.0.1", "port": 3306, "database": "audiopilot"}
+2025-12-11 14:17:20	[34mINFO[0m	ioc/redis.go:54	Redis connected successfully	{"addr": "localhost:6379", "db": 0, "tracing_enabled": true, "metrics_enabled": true}
+2025-12-11 14:17:20	[34mINFO[0m	ioc/sms.go:47	SMS client initialized	{"provider": "volcengine"}
+2025-12-11 14:17:20	[34mINFO[0m	ioc/app.go:110	All routes registered successfully
+2025-12-11 14:17:20	[34mINFO[0m	ioc/app.go:132	Starting server...	{"address": "0.0.0.0:8085", "mode": "debug"}
+2025-12-11 14:17:20	[34mINFO[0m	ioc/app.go:139	Server started successfully	{"address": "0.0.0.0:8085", "health_endpoint": "/health", "ready_endpoint": "/ready"}
+2025-12-11 14:17:20	[34mINFO[0m	route/engine.go:416	HERTZ: Using network library=netpoll
+2025-12-11 14:17:20	[34mINFO[0m	netpoll/transport.go:149	HERTZ: HTTP server listening on address=[::]:8085
+2025-12-11 14:53:41	[34mINFO[0m	server/main.go:52	Received shutdown signal	{"signal": "interrupt"}
+2025-12-11 14:53:41	[34mINFO[0m	server/hertz.go:103	HERTZ: Received signal: interrupt
+
+2025-12-11 14:53:41	[34mINFO[0m	route/engine.go:316	HERTZ: Begin graceful shutdown, wait at most 10s ...
+2025-12-11 14:53:41	[34mINFO[0m	ioc/app.go:173	Starting graceful shutdown...
+2025-12-11 14:53:41	[34mINFO[0m	ioc/app.go:186	Waiting for load balancer to drain connections...
+2025-12-11 14:53:41	[34mINFO[0m	route/engine.go:334	HERTZ: Execute OnShutdownHooks finish
+2025-12-11 14:53:44	[34mINFO[0m	ioc/app.go:79	Config loaded successfully	{"env": "debug", "log_level": "info"}
+2025-12-11 14:53:44	[34mINFO[0m	ioc/tracing.go:89	OpenTelemetry provider initialized	{"endpoint": "apmplus-cn-beijing.volces.com:4317", "service_name": "echo", "has_app_key": true}
+2025-12-11 14:53:44	[34mINFO[0m	ioc/tracing.go:185	OTEL log provider initialized with zap bridge
+2025-12-11 14:53:44	[34mINFO[0m	ioc/wire.go:77	database connected	{"host": "127.0.0.1", "port": 3306, "database": "audiopilot", "tracing_enabled": true}
+2025-12-11 14:53:44	[34mINFO[0m	ioc/redis.go:54	Redis connected successfully	{"addr": "localhost:6379", "db": 0, "tracing_enabled": true, "metrics_enabled": true}
+2025-12-11 14:53:44	[34mINFO[0m	ioc/sms.go:47	SMS client initialized	{"provider": "volcengine"}
+2025-12-11 14:53:44	[34mINFO[0m	ioc/app.go:110	All routes registered successfully
+2025-12-11 14:53:44	[34mINFO[0m	ioc/app.go:132	Starting server...	{"address": "0.0.0.0:8085", "mode": "debug"}
+2025-12-11 14:53:44	[34mINFO[0m	ioc/app.go:139	Server started successfully	{"address": "0.0.0.0:8085", "health_endpoint": "/health", "ready_endpoint": "/ready"}
+2025-12-11 14:53:44	[34mINFO[0m	route/engine.go:416	HERTZ: Using network library=netpoll
+2025-12-11 14:53:44	[34mINFO[0m	netpoll/transport.go:149	HERTZ: HTTP server listening on address=[::]:8085
+2025-12-11 14:56:08	[34mINFO[0m	app/context.go:827	access	{"trace_id": "cc532ec05c4de684db22aaaf370b086f", "span_id": "115b9c28504d5332", "context": "context.Background.WithValue(internal.traceCarrierContextKeyType, *internal.TraceCarrier).WithValue(baggage.baggageContextKeyType, baggage.baggageState).WithValue(trace.traceContextKeyType, trace.nonRecordingSpan).WithValue(trace.traceContextKeyType, *trace.recordingSpan)", "status": 200, "biz_code": 0, "latency": 0.003095333, "latency_ms": 3, "method": "POST", "path": "/api/v2/user/sms-login", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 107}
+2025-12-11 14:57:18	[34mINFO[0m	app/context.go:827	access	{"trace_id": "4385fe48f10f5a8d85511005336b04e4", "span_id": "6f2957c0ced54112", "context": "context.Background.WithValue(internal.traceCarrierContextKeyType, *internal.TraceCarrier).WithValue(baggage.baggageContextKeyType, baggage.baggageState).WithValue(trace.traceContextKeyType, trace.nonRecordingSpan).WithValue(trace.traceContextKeyType, *trace.recordingSpan)", "status": 200, "biz_code": 0, "latency": 0.002584708, "latency_ms": 2, "method": "POST", "path": "/api/v2/user/sms-login", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 107}
+2025-12-11 15:01:56	[34mINFO[0m	server/hertz.go:103	HERTZ: Received signal: interrupt
+
+2025-12-11 15:01:56	[34mINFO[0m	server/main.go:52	Received shutdown signal	{"signal": "interrupt"}
+2025-12-11 15:01:56	[34mINFO[0m	route/engine.go:316	HERTZ: Begin graceful shutdown, wait at most 10s ...
+2025-12-11 15:01:56	[34mINFO[0m	ioc/app.go:173	Starting graceful shutdown...
+2025-12-11 15:01:56	[34mINFO[0m	ioc/app.go:186	Waiting for load balancer to drain connections...
+2025-12-11 15:01:56	[34mINFO[0m	route/engine.go:334	HERTZ: Execute OnShutdownHooks finish
+2025-12-11 15:01:59	[34mINFO[0m	ioc/app.go:79	Config loaded successfully	{"env": "debug", "log_level": "info"}
+2025-12-11 15:01:59	[34mINFO[0m	ioc/tracing.go:89	OpenTelemetry provider initialized	{"endpoint": "apmplus-cn-beijing.volces.com:4317", "service_name": "echo", "has_app_key": true}
+2025-12-11 15:01:59	[34mINFO[0m	ioc/tracing.go:185	OTEL log provider initialized with zap bridge
+2025-12-11 15:01:59	[34mINFO[0m	ioc/wire.go:77	database connected	{"host": "127.0.0.1", "port": 3306, "database": "audiopilot", "tracing_enabled": true}
+2025-12-11 15:01:59	[34mINFO[0m	ioc/redis.go:54	Redis connected successfully	{"addr": "localhost:6379", "db": 0, "tracing_enabled": true, "metrics_enabled": true}
+2025-12-11 15:01:59	[34mINFO[0m	ioc/sms.go:47	SMS client initialized	{"provider": "volcengine"}
+2025-12-11 15:01:59	[34mINFO[0m	ioc/app.go:110	All routes registered successfully
+2025-12-11 15:01:59	[34mINFO[0m	ioc/app.go:132	Starting server...	{"address": "0.0.0.0:8085", "mode": "debug"}
+2025-12-11 15:01:59	[34mINFO[0m	ioc/app.go:139	Server started successfully	{"address": "0.0.0.0:8085", "health_endpoint": "/health", "ready_endpoint": "/ready"}
+2025-12-11 15:01:59	[34mINFO[0m	route/engine.go:416	HERTZ: Using network library=netpoll
+2025-12-11 15:01:59	[34mINFO[0m	netpoll/transport.go:149	HERTZ: HTTP server listening on address=[::]:8085
+2025-12-11 15:02:03	[34mINFO[0m	app/context.go:827	access	{"trace_id": "2c7c98496219ec2e432623bdde46c16d", "span_id": "f213f0e3d5bff7ee", "context": "context.Background.WithValue(internal.traceCarrierContextKeyType, *internal.TraceCarrier).WithValue(baggage.baggageContextKeyType, baggage.baggageState).WithValue(trace.traceContextKeyType, trace.nonRecordingSpan).WithValue(trace.traceContextKeyType, *trace.recordingSpan)", "status": 200, "biz_code": 0, "latency": 0.004389625, "latency_ms": 4, "method": "POST", "path": "/api/v2/user/sms-login", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 107}
+2025-12-11 15:02:05	[34mINFO[0m	app/context.go:827	access	{"trace_id": "d18be5faa42c4787583bc434aebd9d48", "span_id": "d26695df30a68916", "context": "context.Background.WithValue(internal.traceCarrierContextKeyType, *internal.TraceCarrier).WithValue(baggage.baggageContextKeyType, baggage.baggageState).WithValue(trace.traceContextKeyType, trace.nonRecordingSpan).WithValue(trace.traceContextKeyType, *trace.recordingSpan)", "status": 200, "biz_code": 0, "latency": 0.002548834, "latency_ms": 2, "method": "POST", "path": "/api/v2/user/sms-login", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 107}
+2025-12-11 15:05:21	[34mINFO[0m	server/main.go:52	Received shutdown signal	{"signal": "interrupt"}
+2025-12-11 15:05:21	[34mINFO[0m	server/hertz.go:103	HERTZ: Received signal: interrupt
+
+2025-12-11 15:05:21	[34mINFO[0m	ioc/app.go:173	Starting graceful shutdown...
+2025-12-11 15:05:21	[34mINFO[0m	route/engine.go:316	HERTZ: Begin graceful shutdown, wait at most 10s ...
+2025-12-11 15:05:21	[34mINFO[0m	ioc/app.go:186	Waiting for load balancer to drain connections...
+2025-12-11 15:05:21	[34mINFO[0m	route/engine.go:334	HERTZ: Execute OnShutdownHooks finish
+2025-12-11 15:05:23	[34mINFO[0m	ioc/app.go:79	Config loaded successfully	{"env": "debug", "log_level": "info"}
+2025-12-11 15:05:23	[34mINFO[0m	ioc/tracing.go:89	OpenTelemetry provider initialized	{"endpoint": "apmplus-cn-beijing.volces.com:4317", "service_name": "echo", "has_app_key": true}
+2025-12-11 15:05:23	[34mINFO[0m	ioc/tracing.go:185	OTEL log provider initialized with zap bridge
+2025-12-11 15:05:23	[34mINFO[0m	ioc/wire.go:77	database connected	{"host": "127.0.0.1", "port": 3306, "database": "audiopilot", "tracing_enabled": true}
+2025-12-11 15:05:23	[34mINFO[0m	ioc/redis.go:54	Redis connected successfully	{"addr": "localhost:6379", "db": 0, "tracing_enabled": true, "metrics_enabled": true}
+2025-12-11 15:05:23	[34mINFO[0m	ioc/sms.go:47	SMS client initialized	{"provider": "volcengine"}
+2025-12-11 15:05:23	[34mINFO[0m	ioc/app.go:110	All routes registered successfully
+2025-12-11 15:05:23	[34mINFO[0m	ioc/app.go:132	Starting server...	{"address": "0.0.0.0:8085", "mode": "debug"}
+2025-12-11 15:05:23	[34mINFO[0m	ioc/app.go:139	Server started successfully	{"address": "0.0.0.0:8085", "health_endpoint": "/health", "ready_endpoint": "/ready"}
+2025-12-11 15:05:23	[34mINFO[0m	route/engine.go:416	HERTZ: Using network library=netpoll
+2025-12-11 15:05:23	[34mINFO[0m	netpoll/transport.go:149	HERTZ: HTTP server listening on address=[::]:8085
+2025-12-11 15:05:36	[34mINFO[0m	app/context.go:827	access	{"trace_id": "95fa2e04c61749031aec37363e1aae1e", "span_id": "9aecd094b5458239", "context": "context.Background.WithValue(internal.traceCarrierContextKeyType, *internal.TraceCarrier).WithValue(baggage.baggageContextKeyType, baggage.baggageState).WithValue(trace.traceContextKeyType, trace.nonRecordingSpan).WithValue(trace.traceContextKeyType, *trace.recordingSpan)", "status": 200, "biz_code": 0, "latency": 0.004562458, "latency_ms": 4, "method": "POST", "path": "/api/v2/user/sms-login", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 107}
+2025-12-11 15:08:56	[34mINFO[0m	server/hertz.go:103	HERTZ: Received signal: interrupt
+
+2025-12-11 15:08:56	[34mINFO[0m	server/main.go:52	Received shutdown signal	{"signal": "interrupt"}
+2025-12-11 15:08:56	[34mINFO[0m	route/engine.go:316	HERTZ: Begin graceful shutdown, wait at most 10s ...
+2025-12-11 15:08:56	[34mINFO[0m	ioc/app.go:173	Starting graceful shutdown...
+2025-12-11 15:08:56	[34mINFO[0m	ioc/app.go:186	Waiting for load balancer to drain connections...
+2025-12-11 15:08:56	[34mINFO[0m	route/engine.go:334	HERTZ: Execute OnShutdownHooks finish
+2025-12-11 15:08:58	[34mINFO[0m	ioc/app.go:79	Config loaded successfully	{"env": "debug", "log_level": "info"}
+2025-12-11 15:08:58	[34mINFO[0m	ioc/tracing.go:89	OpenTelemetry provider initialized	{"endpoint": "apmplus-cn-beijing.volces.com:4317", "service_name": "echo", "has_app_key": true}
+2025-12-11 15:08:58	[34mINFO[0m	ioc/tracing.go:185	OTEL log provider initialized with zap bridge
+2025-12-11 15:08:58	[34mINFO[0m	ioc/wire.go:77	database connected	{"host": "127.0.0.1", "port": 3306, "database": "audiopilot", "tracing_enabled": true}
+2025-12-11 15:08:58	[34mINFO[0m	ioc/redis.go:54	Redis connected successfully	{"addr": "localhost:6379", "db": 0, "tracing_enabled": true, "metrics_enabled": true}
+2025-12-11 15:08:58	[34mINFO[0m	ioc/sms.go:47	SMS client initialized	{"provider": "volcengine"}
+2025-12-11 15:08:58	[34mINFO[0m	ioc/app.go:110	All routes registered successfully
+2025-12-11 15:08:58	[34mINFO[0m	ioc/app.go:132	Starting server...	{"address": "0.0.0.0:8085", "mode": "debug"}
+2025-12-11 15:08:58	[34mINFO[0m	ioc/app.go:139	Server started successfully	{"address": "0.0.0.0:8085", "health_endpoint": "/health", "ready_endpoint": "/ready"}
+2025-12-11 15:08:58	[34mINFO[0m	route/engine.go:416	HERTZ: Using network library=netpoll
+2025-12-11 15:08:58	[34mINFO[0m	netpoll/transport.go:149	HERTZ: HTTP server listening on address=[::]:8085
+2025-12-11 15:09:01	[34mINFO[0m	app/context.go:827	access	{"trace_id": "1216f589b098f11c68c34c8c0b139ac4", "span_id": "f24ea004f55ac9a6", "context": "context.Background.WithValue(internal.traceCarrierContextKeyType, *internal.TraceCarrier).WithValue(baggage.baggageContextKeyType, baggage.baggageState).WithValue(trace.traceContextKeyType, trace.nonRecordingSpan).WithValue(trace.traceContextKeyType, *trace.recordingSpan)", "status": 200, "biz_code": 0, "latency": 0.004796458, "latency_ms": 4, "method": "POST", "path": "/api/v2/user/sms-login", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 107}
+2025-12-11 15:09:03	[34mINFO[0m	app/context.go:827	access	{"trace_id": "5ba72ce6f892f637e8ee6523d015163e", "span_id": "39eb4528f0b963d0", "context": "context.Background.WithValue(internal.traceCarrierContextKeyType, *internal.TraceCarrier).WithValue(baggage.baggageContextKeyType, baggage.baggageState).WithValue(trace.traceContextKeyType, trace.nonRecordingSpan).WithValue(trace.traceContextKeyType, *trace.recordingSpan)", "status": 200, "biz_code": 0, "latency": 0.002687583, "latency_ms": 2, "method": "POST", "path": "/api/v2/user/sms-login", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 107}
+2025-12-11 16:08:46	[34mINFO[0m	server/main.go:52	Received shutdown signal	{"signal": "interrupt"}
+2025-12-11 16:08:46	[34mINFO[0m	server/hertz.go:103	HERTZ: Received signal: interrupt
+
+2025-12-11 16:08:46	[34mINFO[0m	route/engine.go:316	HERTZ: Begin graceful shutdown, wait at most 10s ...
+2025-12-11 16:08:46	[34mINFO[0m	ioc/app.go:173	Starting graceful shutdown...
+2025-12-11 16:08:46	[34mINFO[0m	ioc/app.go:186	Waiting for load balancer to drain connections...
+2025-12-11 16:08:46	[34mINFO[0m	route/engine.go:334	HERTZ: Execute OnShutdownHooks finish
+2025-12-11 16:08:48	[34mINFO[0m	ioc/app.go:79	Config loaded successfully	{"env": "debug", "log_level": "info"}
+2025-12-11 16:08:48	[34mINFO[0m	ioc/tracing.go:89	OpenTelemetry provider initialized	{"endpoint": "apmplus-cn-beijing.volces.com:4317", "service_name": "echo", "has_app_key": true}
+2025-12-11 16:08:48	[34mINFO[0m	ioc/tracing.go:185	OTEL log provider initialized with zap bridge
+2025-12-11 16:08:48	[34mINFO[0m	ioc/wire.go:77	database connected	{"host": "127.0.0.1", "port": 3306, "database": "audiopilot", "tracing_enabled": true}
+2025-12-11 16:08:48	[34mINFO[0m	ioc/redis.go:54	Redis connected successfully	{"addr": "localhost:6379", "db": 0, "tracing_enabled": true, "metrics_enabled": true}
+2025-12-11 16:08:48	[34mINFO[0m	ioc/sms.go:47	SMS client initialized	{"provider": "volcengine"}
+2025-12-11 16:08:48	[34mINFO[0m	ioc/app.go:110	All routes registered successfully
+2025-12-11 16:08:48	[34mINFO[0m	ioc/app.go:132	Starting server...	{"address": "0.0.0.0:8085", "mode": "debug"}
+2025-12-11 16:08:48	[34mINFO[0m	ioc/app.go:139	Server started successfully	{"address": "0.0.0.0:8085", "health_endpoint": "/health", "ready_endpoint": "/ready"}
+2025-12-11 16:08:48	[34mINFO[0m	route/engine.go:416	HERTZ: Using network library=netpoll
+2025-12-11 16:08:48	[34mINFO[0m	netpoll/transport.go:149	HERTZ: HTTP server listening on address=[::]:8085
+2025-12-11 16:08:50	[34mINFO[0m	app/context.go:827	access	{"trace_id": "88bd626af7b0bb556e93df7e754fec7f", "span_id": "b4f4617928e51ed1", "context": "context.Background.WithValue(internal.traceCarrierContextKeyType, *internal.TraceCarrier).WithValue(baggage.baggageContextKeyType, baggage.baggageState).WithValue(trace.traceContextKeyType, trace.nonRecordingSpan).WithValue(trace.traceContextKeyType, *trace.recordingSpan)", "status": 200, "biz_code": 0, "latency": 0.002978667, "latency_ms": 2, "method": "POST", "path": "/api/v2/user/sms-login", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 135}
+2025-12-11 16:50:22	[34mINFO[0m	app/context.go:827	access	{"trace_id": "1974a540eaa0aeb958fa63fd803375d3", "span_id": "951d917f027ec6b9", "context": "context.Background.WithValue(internal.traceCarrierContextKeyType, *internal.TraceCarrier).WithValue(baggage.baggageContextKeyType, baggage.baggageState).WithValue(trace.traceContextKeyType, trace.nonRecordingSpan).WithValue(trace.traceContextKeyType, *trace.recordingSpan)", "status": 200, "biz_code": 0, "latency": 0.002357125, "latency_ms": 2, "method": "POST", "path": "/api/v2/user/sms-login", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 161}
+2025-12-11 16:57:02	[34mINFO[0m	app/context.go:827	access	{"trace_id": "c8a8996aa8c09e538a0c8dfc7d61535f", "span_id": "ed9b666306cc8b08", "context": "context.Background.WithValue(internal.traceCarrierContextKeyType, *internal.TraceCarrier).WithValue(baggage.baggageContextKeyType, baggage.baggageState).WithValue(trace.traceContextKeyType, trace.nonRecordingSpan).WithValue(trace.traceContextKeyType, *trace.recordingSpan)", "status": 200, "biz_code": 0, "latency": 0.001667458, "latency_ms": 1, "method": "POST", "path": "/api/v2/user/sms-login", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 158}
+2025-12-11 18:47:20	[34mINFO[0m	server/hertz.go:103	HERTZ: Received signal: interrupt
+
+2025-12-11 18:47:20	[34mINFO[0m	server/main.go:52	Received shutdown signal	{"signal": "interrupt"}
+2025-12-11 18:47:20	[34mINFO[0m	route/engine.go:316	HERTZ: Begin graceful shutdown, wait at most 10s ...
+2025-12-11 18:47:20	[34mINFO[0m	ioc/app.go:173	Starting graceful shutdown...
+2025-12-11 18:47:20	[34mINFO[0m	ioc/app.go:186	Waiting for load balancer to drain connections...
+2025-12-11 18:47:20	[34mINFO[0m	route/engine.go:334	HERTZ: Execute OnShutdownHooks finish
+2025-12-11 18:47:22	[34mINFO[0m	ioc/app.go:79	Config loaded successfully	{"env": "debug", "log_level": "debug"}
+2025-12-11 18:47:22	[34mINFO[0m	ioc/tracing.go:60	Tracing is disabled
+2025-12-11 18:47:22	[34mINFO[0m	ioc/wire.go:78	database connected	{"host": "127.0.0.1", "port": 3306, "database": "audiopilot", "tracing_enabled": true}
+2025-12-11 18:47:22	[34mINFO[0m	ioc/redis.go:54	Redis connected successfully	{"addr": "localhost:6379", "db": 1, "tracing_enabled": true, "metrics_enabled": true}
+2025-12-11 18:47:22	[34mINFO[0m	ioc/sms.go:48	SMS client initialized	{"provider": "volcengine"}
+2025-12-11 18:47:22	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/             --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func1 (num=7 handlers)
+2025-12-11 18:47:22	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/cmdline      --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func2 (num=7 handlers)
+2025-12-11 18:47:22	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/profile      --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func3 (num=7 handlers)
+2025-12-11 18:47:22	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=POST   absolutePath=/debug/pprof/symbol       --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func4 (num=7 handlers)
+2025-12-11 18:47:22	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/symbol       --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func5 (num=7 handlers)
+2025-12-11 18:47:22	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/trace        --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func6 (num=7 handlers)
+2025-12-11 18:47:22	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/allocs       --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func7 (num=7 handlers)
+2025-12-11 18:47:22	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/block        --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func8 (num=7 handlers)
+2025-12-11 18:47:22	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/goroutine    --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func9 (num=7 handlers)
+2025-12-11 18:47:22	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/heap         --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func10 (num=7 handlers)
+2025-12-11 18:47:22	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/mutex        --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func11 (num=7 handlers)
+2025-12-11 18:47:22	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/threadcreate --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func12 (num=7 handlers)
+2025-12-11 18:47:22	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/health                   --> handlerName=echo/internal/router.RegisterOpsRoutes.func1 (num=7 handlers)
+2025-12-11 18:47:22	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/ready                    --> handlerName=echo/internal/router.RegisterOpsRoutes.func2 (num=7 handlers)
+2025-12-11 18:47:22	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/swagger/*any             --> handlerName=github.com/hertz-contrib/swagger.CustomWrapHandler.func1 (num=7 handlers)
+2025-12-11 18:47:22	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=POST   absolutePath=/api/v2/user/sms          --> handlerName=echo/internal/router.RegisterUserRoutes.Wrap.func1 (num=7 handlers)
+2025-12-11 18:47:22	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=POST   absolutePath=/api/v2/user/sms-login    --> handlerName=echo/internal/router.RegisterUserRoutes.Wrap.func2 (num=7 handlers)
+2025-12-11 18:47:22	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=POST   absolutePath=/api/v2/user/refresh      --> handlerName=echo/internal/router.RegisterUserRoutes.Wrap.func3 (num=7 handlers)
+2025-12-11 18:47:22	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=POST   absolutePath=/api/v2/user/logout       --> handlerName=echo/internal/router.RegisterUserRoutes.Wrap.func4 (num=7 handlers)
+2025-12-11 18:47:22	[34mINFO[0m	ioc/app.go:112	All routes registered successfully
+2025-12-11 18:47:22	[34mINFO[0m	ioc/app.go:134	Starting server...	{"address": "0.0.0.0:8085", "mode": "debug"}
+2025-12-11 18:47:22	[34mINFO[0m	ioc/app.go:141	Server started successfully	{"address": "0.0.0.0:8085", "health_endpoint": "/health", "ready_endpoint": "/ready"}
+2025-12-11 18:47:22	[34mINFO[0m	route/engine.go:416	HERTZ: Using network library=netpoll
+2025-12-11 18:47:22	[34mINFO[0m	netpoll/transport.go:149	HERTZ: HTTP server listening on address=[::]:8085
+2025-12-11 18:48:17	[34mINFO[0m	app/context.go:827	access	{"status": 200, "biz_code": 0, "latency": 0.004134125, "latency_ms": 4, "method": "POST", "path": "/api/v2/user/sms-login", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 192}
+2025-12-11 18:48:51	[34mINFO[0m	app/context.go:827	access	{"status": 200, "biz_code": 0, "latency": 0.001812875, "latency_ms": 1, "method": "POST", "path": "/api/v2/user/logout", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 54}
+2025-12-11 18:49:44	[34mINFO[0m	app/context.go:827	access	{"status": 200, "biz_code": 0, "latency": 0.002089292, "latency_ms": 2, "method": "POST", "path": "/api/v2/user/sms-login", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 192}
+2025-12-11 18:49:50	[34mINFO[0m	app/context.go:827	access	{"status": 200, "biz_code": 0, "latency": 0.001519417, "latency_ms": 1, "method": "POST", "path": "/api/v2/user/logout", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 54}
+2025-12-11 18:56:22	[34mINFO[0m	server/main.go:52	Received shutdown signal	{"signal": "interrupt"}
+2025-12-11 18:56:22	[34mINFO[0m	server/hertz.go:103	HERTZ: Received signal: interrupt
+
+2025-12-11 18:56:22	[34mINFO[0m	ioc/app.go:175	Starting graceful shutdown...
+2025-12-11 18:56:22	[34mINFO[0m	route/engine.go:316	HERTZ: Begin graceful shutdown, wait at most 10s ...
+2025-12-11 18:56:22	[34mINFO[0m	ioc/app.go:188	Waiting for load balancer to drain connections...
+2025-12-11 18:56:22	[34mINFO[0m	route/engine.go:334	HERTZ: Execute OnShutdownHooks finish
+2025-12-11 19:02:32	[34mINFO[0m	ioc/app.go:79	Config loaded successfully	{"env": "debug", "log_level": "debug"}
+2025-12-11 19:02:32	[34mINFO[0m	ioc/tracing.go:60	Tracing is disabled
+2025-12-11 19:02:56	[34mINFO[0m	ioc/app.go:79	Config loaded successfully	{"env": "debug", "log_level": "debug"}
+2025-12-11 19:02:56	[34mINFO[0m	ioc/tracing.go:60	Tracing is disabled
+2025-12-11 19:02:56	[34mINFO[0m	ioc/wire.go:110	database connected	{"host": "127.0.0.1", "port": 3306, "database": "audiopilot", "tracing_enabled": true}
+2025-12-11 19:02:56	[34mINFO[0m	ioc/redis.go:54	Redis connected successfully	{"addr": "localhost:6379", "db": 1, "tracing_enabled": true, "metrics_enabled": true}
+2025-12-11 19:02:56	[34mINFO[0m	ioc/sms.go:48	SMS client initialized	{"provider": "volcengine"}
+2025-12-11 19:02:56	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/             --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func1 (num=7 handlers)
+2025-12-11 19:02:56	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/cmdline      --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func2 (num=7 handlers)
+2025-12-11 19:02:56	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/profile      --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func3 (num=7 handlers)
+2025-12-11 19:02:56	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=POST   absolutePath=/debug/pprof/symbol       --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func4 (num=7 handlers)
+2025-12-11 19:02:56	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/symbol       --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func5 (num=7 handlers)
+2025-12-11 19:02:56	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/trace        --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func6 (num=7 handlers)
+2025-12-11 19:02:56	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/allocs       --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func7 (num=7 handlers)
+2025-12-11 19:02:56	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/block        --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func8 (num=7 handlers)
+2025-12-11 19:02:56	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/goroutine    --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func9 (num=7 handlers)
+2025-12-11 19:02:56	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/heap         --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func10 (num=7 handlers)
+2025-12-11 19:02:56	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/mutex        --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func11 (num=7 handlers)
+2025-12-11 19:02:56	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/threadcreate --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func12 (num=7 handlers)
+2025-12-11 19:02:56	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/health                   --> handlerName=echo/internal/router.RegisterOpsRoutes.func1 (num=7 handlers)
+2025-12-11 19:02:56	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/ready                    --> handlerName=echo/internal/router.RegisterOpsRoutes.func2 (num=7 handlers)
+2025-12-11 19:02:56	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/swagger/*any             --> handlerName=github.com/hertz-contrib/swagger.CustomWrapHandler.func1 (num=7 handlers)
+2025-12-11 19:02:56	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=POST   absolutePath=/api/v2/user/sms          --> handlerName=echo/internal/router.RegisterUserRoutes.Wrap.func1 (num=7 handlers)
+2025-12-11 19:02:56	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=POST   absolutePath=/api/v2/user/sms-login    --> handlerName=echo/internal/router.RegisterUserRoutes.Wrap.func2 (num=7 handlers)
+2025-12-11 19:02:56	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=POST   absolutePath=/api/v2/user/refresh      --> handlerName=echo/internal/router.RegisterUserRoutes.Wrap.func3 (num=7 handlers)
+2025-12-11 19:02:56	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=POST   absolutePath=/api/v2/user/logout       --> handlerName=echo/internal/router.RegisterUserRoutes.Wrap.func4 (num=7 handlers)
+2025-12-11 19:02:56	[34mINFO[0m	ioc/app.go:106	All routes registered successfully
+2025-12-11 19:02:56	[34mINFO[0m	ioc/app.go:128	Starting server...	{"address": "0.0.0.0:8085", "mode": "debug"}
+2025-12-11 19:02:56	[34mINFO[0m	ioc/app.go:135	Server started successfully	{"address": "0.0.0.0:8085", "health_endpoint": "/health", "ready_endpoint": "/ready"}
+2025-12-11 19:02:56	[34mINFO[0m	route/engine.go:416	HERTZ: Using network library=netpoll
+2025-12-11 19:02:56	[34mINFO[0m	netpoll/transport.go:149	HERTZ: HTTP server listening on address=[::]:8085
+2025-12-11 19:12:05	[34mINFO[0m	server/main.go:52	Received shutdown signal	{"signal": "interrupt"}
+2025-12-11 19:12:05	[34mINFO[0m	server/hertz.go:103	HERTZ: Received signal: interrupt
+
+2025-12-11 19:12:05	[34mINFO[0m	ioc/app.go:169	Starting graceful shutdown...
+2025-12-11 19:12:05	[34mINFO[0m	ioc/app.go:182	Waiting for load balancer to drain connections...
+2025-12-11 19:12:05	[34mINFO[0m	route/engine.go:316	HERTZ: Begin graceful shutdown, wait at most 10s ...
+2025-12-11 19:12:05	[34mINFO[0m	route/engine.go:334	HERTZ: Execute OnShutdownHooks finish
+2025-12-11 19:12:07	[34mINFO[0m	ioc/app.go:68	Config loaded successfully	{"env": "debug", "log_level": "debug"}
+2025-12-11 19:12:07	[34mINFO[0m	ioc/wire.go:123	database connected	{"host": "127.0.0.1", "port": 3306, "database": "audiopilot", "tracing_enabled": true}
+2025-12-11 19:12:07	[34mINFO[0m	ioc/redis.go:54	Redis connected successfully	{"addr": "localhost:6379", "db": 1, "tracing_enabled": true, "metrics_enabled": true}
+2025-12-11 19:12:07	[34mINFO[0m	ioc/tracing.go:60	Tracing is disabled
+2025-12-11 19:12:07	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/             --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func1 (num=7 handlers)
+2025-12-11 19:12:07	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/cmdline      --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func2 (num=7 handlers)
+2025-12-11 19:12:07	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/profile      --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func3 (num=7 handlers)
+2025-12-11 19:12:07	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=POST   absolutePath=/debug/pprof/symbol       --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func4 (num=7 handlers)
+2025-12-11 19:12:07	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/symbol       --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func5 (num=7 handlers)
+2025-12-11 19:12:07	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/trace        --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func6 (num=7 handlers)
+2025-12-11 19:12:07	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/allocs       --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func7 (num=7 handlers)
+2025-12-11 19:12:07	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/block        --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func8 (num=7 handlers)
+2025-12-11 19:12:07	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/goroutine    --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func9 (num=7 handlers)
+2025-12-11 19:12:07	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/heap         --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func10 (num=7 handlers)
+2025-12-11 19:12:07	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/mutex        --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func11 (num=7 handlers)
+2025-12-11 19:12:07	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/debug/pprof/threadcreate --> handlerName=github.com/hertz-contrib/pprof.RouteRegister.NewHertzHTTPHandlerFunc.NewHertzHTTPHandler.func12 (num=7 handlers)
+2025-12-11 19:12:07	[34mINFO[0m	ioc/sms.go:48	SMS client initialized	{"provider": "volcengine"}
+2025-12-11 19:12:07	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/health                   --> handlerName=echo/internal/router.RegisterOpsRoutes.func1 (num=7 handlers)
+2025-12-11 19:12:07	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/ready                    --> handlerName=echo/internal/router.RegisterOpsRoutes.func2 (num=7 handlers)
+2025-12-11 19:12:07	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=GET    absolutePath=/swagger/*any             --> handlerName=github.com/hertz-contrib/swagger.CustomWrapHandler.func1 (num=7 handlers)
+2025-12-11 19:12:07	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=POST   absolutePath=/api/v2/user/sms          --> handlerName=echo/internal/router.RegisterUserRoutes.Wrap.func1 (num=7 handlers)
+2025-12-11 19:12:07	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=POST   absolutePath=/api/v2/user/sms-login    --> handlerName=echo/internal/router.RegisterUserRoutes.Wrap.func2 (num=7 handlers)
+2025-12-11 19:12:07	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=POST   absolutePath=/api/v2/user/refresh      --> handlerName=echo/internal/router.RegisterUserRoutes.Wrap.func3 (num=7 handlers)
+2025-12-11 19:12:07	[35mDEBUG[0m	route/engine.go:702	HERTZ: Method=POST   absolutePath=/api/v2/user/logout       --> handlerName=echo/internal/router.RegisterUserRoutes.Wrap.func4 (num=7 handlers)
+2025-12-11 19:12:07	[34mINFO[0m	ioc/app.go:79	All components initialized successfully
+2025-12-11 19:12:07	[34mINFO[0m	ioc/app.go:99	Starting server...	{"address": "0.0.0.0:8085", "mode": "debug"}
+2025-12-11 19:12:07	[34mINFO[0m	ioc/app.go:106	Server started successfully	{"address": "0.0.0.0:8085", "health_endpoint": "/health", "ready_endpoint": "/ready"}
+2025-12-11 19:12:07	[34mINFO[0m	route/engine.go:416	HERTZ: Using network library=netpoll
+2025-12-11 19:12:07	[34mINFO[0m	netpoll/transport.go:149	HERTZ: HTTP server listening on address=[::]:8085
+2025-12-11 19:12:15	[34mINFO[0m	app/context.go:827	access	{"status": 200, "biz_code": 0, "latency": 0.00320225, "latency_ms": 3, "method": "POST", "path": "/api/v2/user/sms-login", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 192}
+2025-12-11 19:12:19	[34mINFO[0m	app/context.go:827	access	{"status": 200, "biz_code": 0, "latency": 0.002206, "latency_ms": 2, "method": "POST", "path": "/api/v2/user/logout", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 54}
+2025-12-11 19:13:18	[34mINFO[0m	app/context.go:827	access	{"status": 200, "biz_code": 0, "latency": 0.351799792, "latency_ms": 351, "method": "POST", "path": "/api/v2/user/sms", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 54}
+2025-12-11 19:14:51	[34mINFO[0m	server/main.go:52	Received shutdown signal	{"signal": "interrupt"}
+2025-12-11 19:14:51	[34mINFO[0m	server/hertz.go:103	HERTZ: Received signal: interrupt
+
+2025-12-11 19:14:51	[34mINFO[0m	ioc/app.go:140	Starting graceful shutdown...
+2025-12-11 19:14:51	[34mINFO[0m	ioc/app.go:152	Waiting for load balancer to drain connections...
+2025-12-11 19:14:51	[34mINFO[0m	route/engine.go:316	HERTZ: Begin graceful shutdown, wait at most 10s ...
+2025-12-11 19:14:53	[34mINFO[0m	ioc/app.go:156	Shutting down HTTP server...	{"timeout": 5}
+2025-12-11 19:14:53	[34mINFO[0m	ioc/app.go:177	Closing infrastructure resources...	{"timeout": 2.5}
+2025-12-11 19:14:53	[34mINFO[0m	ioc/app.go:181	Infrastructure resources closed
+2025-12-11 19:14:53	[35mDEBUG[0m	ioc/app.go:187	Logger sync warning	{"error": "sync /dev/stdout: inappropriate ioctl for device"}
+2025-12-11 19:14:53	[34mINFO[0m	ioc/app.go:190	Graceful shutdown completed
+2025-12-11 19:15:01	[34mINFO[0m	route/engine.go:331	HERTZ: Execute OnShutdownHooks timeout: error=context deadline exceeded
+2025-12-11 19:15:03	[34mINFO[0m	ioc/app.go:68	Config loaded successfully	{"env": "Info", "log_level": "Info"}
+2025-12-11 19:15:03	[34mINFO[0m	ioc/wire.go:123	database connected	{"host": "127.0.0.1", "port": 3306, "database": "audiopilot", "tracing_enabled": true}
+2025-12-11 19:15:03	[34mINFO[0m	ioc/redis.go:54	Redis connected successfully	{"addr": "localhost:6379", "db": 1, "tracing_enabled": true, "metrics_enabled": true}
+2025-12-11 19:15:03	[34mINFO[0m	ioc/tracing.go:60	Tracing is disabled
+2025-12-11 19:15:03	[34mINFO[0m	ioc/sms.go:48	SMS client initialized	{"provider": "volcengine"}
+2025-12-11 19:15:03	[34mINFO[0m	ioc/app.go:79	All components initialized successfully
+2025-12-11 19:15:03	[34mINFO[0m	ioc/app.go:99	Starting server...	{"address": "0.0.0.0:8085", "mode": "Info"}
+2025-12-11 19:15:03	[34mINFO[0m	ioc/app.go:106	Server started successfully	{"address": "0.0.0.0:8085", "health_endpoint": "/health", "ready_endpoint": "/ready"}
+2025-12-11 19:15:03	[34mINFO[0m	route/engine.go:416	HERTZ: Using network library=netpoll
+2025-12-11 19:15:03	[34mINFO[0m	netpoll/transport.go:149	HERTZ: HTTP server listening on address=[::]:8085
+2025-12-11 19:15:09	[34mINFO[0m	app/context.go:827	access	{"status": 200, "biz_code": 0, "latency": 0.004098875, "latency_ms": 4, "method": "POST", "path": "/api/v2/user/sms-login", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 192}
+2025-12-11 19:15:11	[34mINFO[0m	app/context.go:827	access	{"status": 200, "biz_code": 0, "latency": 0.0019205, "latency_ms": 1, "method": "POST", "path": "/api/v2/user/logout", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 54}
+2025-12-11 19:15:15	[34mINFO[0m	app/context.go:827	access	{"status": 200, "biz_code": 0, "latency": 0.102776958, "latency_ms": 102, "method": "POST", "path": "/api/v2/user/sms", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 54}
+2025-12-11 19:16:51	[34mINFO[0m	server/hertz.go:103	HERTZ: Received signal: interrupt
+
+2025-12-11 19:16:51	[34mINFO[0m	server/main.go:52	Received shutdown signal	{"signal": "interrupt"}
+2025-12-11 19:16:51	[34mINFO[0m	route/engine.go:316	HERTZ: Begin graceful shutdown, wait at most 10s ...
+2025-12-11 19:16:51	[34mINFO[0m	ioc/app.go:140	Starting graceful shutdown...
+2025-12-11 19:16:51	[34mINFO[0m	ioc/app.go:152	Waiting for load balancer to drain connections...
+2025-12-11 19:16:53	[34mINFO[0m	ioc/app.go:156	Shutting down HTTP server...	{"timeout": 5}
+2025-12-11 19:16:53	[34mINFO[0m	ioc/app.go:177	Closing infrastructure resources...	{"timeout": 2.5}
+2025-12-11 19:16:53	[34mINFO[0m	ioc/app.go:181	Infrastructure resources closed
+2025-12-11 19:16:53	[34mINFO[0m	ioc/app.go:190	Graceful shutdown completed
+2025-12-11 19:17:01	[34mINFO[0m	route/engine.go:331	HERTZ: Execute OnShutdownHooks timeout: error=context deadline exceeded
+2025-12-11 19:17:02	[34mINFO[0m	ioc/app.go:68	Config loaded successfully	{"env": "Debug", "log_level": "Debug"}
+2025-12-11 19:17:02	[34mINFO[0m	ioc/wire.go:123	database connected	{"host": "127.0.0.1", "port": 3306, "database": "audiopilot", "tracing_enabled": true}
+2025-12-11 19:17:02	[34mINFO[0m	ioc/redis.go:54	Redis connected successfully	{"addr": "localhost:6379", "db": 1, "tracing_enabled": true, "metrics_enabled": true}
+2025-12-11 19:17:02	[34mINFO[0m	ioc/tracing.go:89	OpenTelemetry provider initialized	{"endpoint": "apmplus-cn-beijing.volces.com:4317", "service_name": "echo", "has_app_key": true}
+2025-12-11 19:17:02	[34mINFO[0m	ioc/tracing.go:185	OTEL log provider initialized with zap bridge
+2025-12-11 19:17:02	[34mINFO[0m	ioc/sms.go:48	SMS client initialized	{"provider": "volcengine"}
+2025-12-11 19:17:02	[34mINFO[0m	ioc/app.go:79	All components initialized successfully
+2025-12-11 19:17:02	[34mINFO[0m	ioc/app.go:99	Starting server...	{"address": "0.0.0.0:8085", "mode": "Debug"}
+2025-12-11 19:17:02	[34mINFO[0m	ioc/app.go:106	Server started successfully	{"address": "0.0.0.0:8085", "health_endpoint": "/health", "ready_endpoint": "/ready"}
+2025-12-11 19:17:02	[34mINFO[0m	route/engine.go:416	HERTZ: Using network library=netpoll
+2025-12-11 19:17:02	[34mINFO[0m	netpoll/transport.go:149	HERTZ: HTTP server listening on address=[::]:8085
+2025-12-11 19:17:07	[34mINFO[0m	app/context.go:827	access	{"trace_id": "6feb97605367dbac0a974ef9466ddcf0", "span_id": "b0d3390c910bdf2b", "context": "context.Background.WithValue(internal.traceCarrierContextKeyType, *internal.TraceCarrier).WithValue(baggage.baggageContextKeyType, baggage.baggageState).WithValue(trace.traceContextKeyType, trace.nonRecordingSpan).WithValue(trace.traceContextKeyType, *trace.recordingSpan)", "status": 200, "biz_code": 0, "latency": 0.00660925, "latency_ms": 6, "method": "POST", "path": "/api/v2/user/sms-login", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 192}
+2025-12-11 19:17:20	[34mINFO[0m	app/context.go:827	access	{"trace_id": "a42d5026f950a3c9ab6648bbf1f3df05", "span_id": "43c1525763a95411", "context": "context.Background.WithValue(internal.traceCarrierContextKeyType, *internal.TraceCarrier).WithValue(baggage.baggageContextKeyType, baggage.baggageState).WithValue(trace.traceContextKeyType, trace.nonRecordingSpan).WithValue(trace.traceContextKeyType, *trace.recordingSpan)", "status": 200, "biz_code": 0, "latency": 0.003195625, "latency_ms": 3, "method": "POST", "path": "/api/v2/user/logout", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 54}
+2025-12-11 19:17:22	[34mINFO[0m	app/context.go:827	access	{"trace_id": "f6e13db1ad7ea1da4932e672a17d4d79", "span_id": "9ef1a8dba412e842", "context": "context.Background.WithValue(internal.traceCarrierContextKeyType, *internal.TraceCarrier).WithValue(baggage.baggageContextKeyType, baggage.baggageState).WithValue(trace.traceContextKeyType, trace.nonRecordingSpan).WithValue(trace.traceContextKeyType, *trace.recordingSpan)", "status": 200, "biz_code": 0, "latency": 0.112927625, "latency_ms": 112, "method": "POST", "path": "/api/v2/user/sms", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 54}
+2025-12-11 19:33:48	[34mINFO[0m	app/context.go:827	access	{"trace_id": "09f198bb08a4b1f82fc2317d7b9e519f", "span_id": "de79147bc2b3dbc6", "context": "context.Background.WithValue(internal.traceCarrierContextKeyType, *internal.TraceCarrier).WithValue(baggage.baggageContextKeyType, baggage.baggageState).WithValue(trace.traceContextKeyType, trace.nonRecordingSpan).WithValue(trace.traceContextKeyType, *trace.recordingSpan)", "status": 200, "biz_code": 0, "latency": 0.006979292, "latency_ms": 6, "method": "POST", "path": "/api/v2/user/sms-login", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 192}
+2025-12-11 20:36:39	[34mINFO[0m	app/context.go:827	access	{"trace_id": "da2c69d79df9f045c1d12f57d7d50eef", "span_id": "22a322ebc9e06a86", "context": "context.Background.WithValue(internal.traceCarrierContextKeyType, *internal.TraceCarrier).WithValue(baggage.baggageContextKeyType, baggage.baggageState).WithValue(trace.traceContextKeyType, trace.nonRecordingSpan).WithValue(trace.traceContextKeyType, *trace.recordingSpan)", "status": 200, "biz_code": 0, "latency": 0.024813917, "latency_ms": 24, "method": "POST", "path": "/api/v2/user/sms-login", "query": "", "ip": "127.0.0.1", "user_agent": "Apifox/1.0.0 (https://apifox.com)", "body_size": 192}
+2025-12-11 21:03:19	[34mINFO[0m	server/hertz.go:103	HERTZ: Received signal: interrupt
+
+2025-12-11 21:03:19	[34mINFO[0m	server/main.go:52	Received shutdown signal	{"signal": "interrupt"}
+2025-12-11 21:03:19	[34mINFO[0m	route/engine.go:316	HERTZ: Begin graceful shutdown, wait at most 10s ...
+2025-12-11 21:03:19	[34mINFO[0m	ioc/app.go:140	Starting graceful shutdown...
+2025-12-11 21:03:19	[34mINFO[0m	ioc/app.go:152	Waiting for load balancer to drain connections...
+2025-12-11 21:03:19	[34mINFO[0m	route/engine.go:334	HERTZ: Execute OnShutdownHooks finish
+2025-12-11 21:03:23	[34mINFO[0m	ioc/app.go:68	Config loaded successfully	{"env": "Debug", "log_level": "Debug"}
+2025-12-11 21:03:23	[34mINFO[0m	ioc/wire.go:123	database connected	{"host": "127.0.0.1", "port": 3306, "database": "audiopilot", "tracing_enabled": true}
+2025-12-11 21:03:23	[34mINFO[0m	ioc/redis.go:54	Redis connected successfully	{"addr": "localhost:6379", "db": 1, "tracing_enabled": true, "metrics_enabled": true}
+2025-12-11 21:03:23	[34mINFO[0m	ioc/tracing.go:89	OpenTelemetry provider initialized	{"endpoint": "apmplus-cn-beijing.volces.com:4317", "service_name": "echo", "has_app_key": true}
+2025-12-11 21:03:23	[34mINFO[0m	ioc/tracing.go:185	OTEL log provider initialized with zap bridge
+2025-12-11 21:03:23	[34mINFO[0m	ioc/sms.go:48	SMS client initialized	{"provider": "volcengine"}
+2025-12-11 21:03:23	[34mINFO[0m	ioc/app.go:79	All components initialized successfully
+2025-12-11 21:03:23	[34mINFO[0m	ioc/app.go:99	Starting server...	{"address": "0.0.0.0:8085", "mode": "Debug"}
+2025-12-11 21:03:23	[34mINFO[0m	ioc/app.go:106	Server started successfully	{"address": "0.0.0.0:8085", "health_endpoint": "/health", "ready_endpoint": "/ready"}
+2025-12-11 21:03:23	[34mINFO[0m	route/engine.go:416	HERTZ: Using network library=netpoll
+2025-12-11 21:03:23	[34mINFO[0m	netpoll/transport.go:149	HERTZ: HTTP server listening on address=[::]:8085

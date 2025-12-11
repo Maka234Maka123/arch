@@ -1,0 +1,127 @@
+# Echo Application Configuration Example
+# 复制此文件为 config.yaml 并填写实际配置值
+# 敏感信息建议通过环境变量覆盖，格式: ECHO_<SECTION>_<KEY>
+
+server:
+  host: "0.0.0.0"
+  port: 8085
+  mode: "release"  # debug / release / test
+  read_timeout: 900
+  write_timeout: 900
+  max_request_body: 67108864  # 64MB
+  shutdown_timeout: 10
+
+log:
+  level: "info"  # debug / info / warn / error
+  format: "console"  # console / json
+  output: "both"  # stdout / file / both
+  dir: "./logs"
+  filename: "arch3.log"
+  max_size: 100  # MB
+  max_backups: 10
+  max_age: 7  # days
+  compress: true
+  rotation_time: "daily"
+  split_level: true
+
+db:
+  driver: "mysql"
+  host: "127.0.0.1"
+  port: 3306
+  username: "your_db_user"  # 或使用 ECHO_DB_USERNAME 环境变量
+  password: "your_db_password"  # 或使用 ECHO_DB_PASSWORD 环境变量
+  database: "arch3"
+  max_idle_conns: 10
+  max_open_conns: 100
+  conn_max_lifetime: 3600
+
+redis:
+  addr: "localhost:6379"
+  password: "your_redis_password"  # 或使用 ECHO_REDIS_PASSWORD 环境变量
+  db: 0
+  pool_size: 100
+
+jwt:
+  secret: "your-jwt-secret-at-least-32-characters-long"  # 必须通过 ECHO_JWT_SECRET 设置
+  expire: 15  # access token 过期时间(分钟)
+  refresh_expire: 10080  # refresh token 过期时间(分钟)，7天
+  cookie_secure: true
+
+# 短信服务配置 (火山引擎)
+sms:
+  provider: "volcengine"
+  access_key: "your_access_key"  # ECHO_SMS_ACCESS_KEY
+  secret_key: "your_secret_key"  # ECHO_SMS_SECRET_KEY
+  sms_account: "your_sms_account"  # ECHO_SMS_SMS_ACCOUNT
+  sign_name: "your_sign_name"  # ECHO_SMS_SIGN_NAME
+  templates:
+    login: "your_login_template_id"
+    register: "your_register_template_id"
+    forget: "your_forget_template_id"
+
+# 中间件配置
+middleware:
+  auth:
+    enabled: true
+
+  cors:
+    enabled: true
+    allow_origins:
+      - "https://yourdomain.com"
+      - "https://www.yourdomain.com"
+    allow_methods:
+      - "GET"
+      - "POST"
+      - "PUT"
+      - "DELETE"
+      - "PATCH"
+      - "OPTIONS"
+    allow_headers:
+      - "Origin"
+      - "Content-Type"
+      - "Accept"
+      - "Authorization"
+      - "X-Trace-ID"
+    expose_headers:
+      - "Content-Length"
+      - "X-Trace-ID"
+    allow_credentials: true
+    max_age: 43200
+
+  gzip:
+    enabled: true
+    level: 6
+    min_length: 1024
+    excluded_exts:
+      - ".png"
+      - ".gif"
+      - ".jpeg"
+      - ".jpg"
+      - ".webp"
+
+  limiter:
+    enabled: true
+    cpu_threshold: 800
+
+  swagger:
+    enabled: false  # 生产环境建议关闭
+    base_path: "/swagger"
+    title: "Echo API"
+    version: "1.0.0"
+
+  access_log:
+    error_only: false
+    enabled: true
+    skip_paths:
+      - "/health"
+      - "/metrics"
+      - "/swagger/*"
+      - "/favicon.ico"
+
+  # 链路追踪配置 (OpenTelemetry)
+  tracing:
+    enabled: true
+    service_name: "arch3"
+    endpoint: "your-apm-endpoint:4317"  # ECHO_MIDDLEWARE_TRACING_ENDPOINT
+    app_key: "your_apm_app_key"  # ECHO_MIDDLEWARE_TRACING_APP_KEY
+    insecure: false

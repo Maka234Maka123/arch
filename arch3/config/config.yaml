@@ -1,0 +1,132 @@
+# Echo Application Configuration
+# 敏感信息请通过环境变量覆盖，格式: ECHO_<SECTION>_<KEY>
+# 例如: ECHO_DB_PASSWORD, ECHO_JWT_SECRET, ECHO_SMS_ACCESS_KEY
+
+server:
+  host: "0.0.0.0"
+  port: 8085
+  mode: "release"
+  read_timeout: 900
+  write_timeout: 900
+  max_request_body: 67108864
+  shutdown_timeout: 10
+
+log:
+  level: "info"
+  format: "console"
+  output: "both"
+  dir: "./logs"
+  filename: "arch3.log"
+  max_size: 100
+  max_backups:
+  max_age: 7
+  compress: true
+  rotation_time: "daily"
+  split_level: true
+
+db:
+  driver: "mysql"
+  host: "127.0.0.1"
+  port: 3306
+  username: "root"
+  password: ""  # 通过 ECHO_DB_PASSWORD 环境变量设置
+  database: "arch3"
+  max_idle_conns: 10
+  max_open_conns: 100
+  conn_max_lifetime: 3600
+
+redis:
+  addr: "localhost:6379"
+  password: ""  # 通过 ECHO_REDIS_PASSWORD 环境变量设置
+  db: 0
+  pool_size: 100
+
+jwt:
+  secret: ""  # 必须通过 ECHO_JWT_SECRET 环境变量设置
+  expire: 15
+  refresh_expire: 10080
+  cookie_secure: true
+
+# 短信服务配置
+sms:
+  provider: "volcengine"
+  access_key: ""  # 通过 ECHO_SMS_ACCESS_KEY 环境变量设置
+  secret_key: ""  # 通过 ECHO_SMS_SECRET_KEY 环境变量设置
+  sms_account: ""  # 通过 ECHO_SMS_SMS_ACCOUNT 环境变量设置
+  sign_name: ""  # 通过 ECHO_SMS_SIGN_NAME 环境变量设置
+  templates:
+    login: ""  # 通过 ECHO_SMS_TEMPLATES_LOGIN 环境变量设置
+    register: ""
+    forget: ""
+
+# 中间件配置
+middleware:
+  # JWT 认证配置
+  auth:
+    enabled: true
+
+  # CORS 跨域配置
+  cors:
+    enabled: true
+    allow_origins:
+      - "*"
+    allow_methods:
+      - "GET"
+      - "POST"
+      - "PUT"
+      - "DELETE"
+      - "PATCH"
+      - "OPTIONS"
+    allow_headers:
+      - "Origin"
+      - "Content-Type"
+      - "Accept"
+      - "Authorization"
+      - "X-Trace-ID"
+    expose_headers:
+      - "Content-Length"
+      - "X-Trace-ID"
+    allow_credentials: true
+    max_age: 43200
+
+  # Gzip 压缩配置
+  gzip:
+    enabled: true
+    level: 6
+    min_length: 1024
+    excluded_exts:
+      - ".png"
+      - ".gif"
+      - ".jpeg"
+      - ".jpg"
+      - ".webp"
+
+  # 限流配置
+  limiter:
+    enabled: true
+    cpu_threshold: 800
+
+  # Swagger 文档配置
+  swagger:
+    enabled: true
+    base_path: "/swagger"
+    title: "Echo API"
+    version: "1.0.0"
+
+  # 访问日志配置
+  access_log:
+    error_only: false
+    enabled: true
+    skip_paths:
+      - "/health"
+      - "/metrics"
+      - "/swagger/*"
+      - "/favicon.ico"
+
+  # 链路追踪配置
+  tracing:
+    enabled: true
+    service_name: "arch3"
+    endpoint: "localhost:4317"  # 通过 ECHO_MIDDLEWARE_TRACING_ENDPOINT 环境变量设置
+    app_key: ""  # 通过 ECHO_MIDDLEWARE_TRACING_APP_KEY 环境变量设置
+    insecure: false
